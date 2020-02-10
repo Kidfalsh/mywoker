@@ -1,6 +1,6 @@
 import React from 'react'
 import Child from './Child'
-import './Life.css'
+import './Life.less'
 export default class Life extends React.Component{
   
   state = {
