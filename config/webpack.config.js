@@ -390,6 +390,10 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  [
+                    "import",
+                    {libraryName: "antd", style: 'css'} // 移动端添加 "libraryName": "antd-mobile"
+                  ]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -407,7 +411,7 @@ module.exports = function(webpackEnv) {
               exclude: /@babel(?:\/|\\{1,2})runtime/,
               loader: require.resolve('babel-loader'),
               options: {
-                babelrc: false,
+                babelrc: true,
                 configFile: false,
                 compact: false,
                 presets: [

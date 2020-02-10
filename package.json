@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "antd": "^3.26.9",
     "axios": "^0.19.2",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
@@ -139,5 +140,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.0"
   }
 }
