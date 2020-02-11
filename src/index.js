@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './pages/demo/Life';
+// import App from './pages/demo/Life';
 import Admin from './Admin';
 import * as serviceWorker from './serviceWorker';
 
