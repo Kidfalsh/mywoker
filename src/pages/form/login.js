@@ -65,7 +65,7 @@ class FormLogin extends React.Component {
                   <Checkbox >记住密码</Checkbox>
                 )
               }
-              <a  href="#" alt="" style={{float:'right'}}>忘记密码</a>
+              <a  href="#admin" alt="" style={{float:'right'}}>忘记密码</a>
             </FormItem>
             <FormItem>
               <Button onClick={this.submitHandle} type='primary'>登录</Button>
