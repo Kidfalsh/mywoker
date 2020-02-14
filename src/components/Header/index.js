@@ -2,7 +2,8 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import './index.less'
 import Util from '../../utils/utils'
-export default class Header extends React.Component {
+import { connect } from 'react-redux'
+class Header extends React.Component {
   state = {
     userName: 'flash',
     sysTime: '',
@@ -12,7 +13,6 @@ export default class Header extends React.Component {
   }
   setTimeDate = () => {
     setInterval(() => {
-
       let sysTime = Util.formateDate(new Date().getTime())
       this.setState({
         sysTime
@@ -30,7 +30,8 @@ export default class Header extends React.Component {
         </Row>
         <Row className="breadcrumb">
           <Col span={4} className="breadcrumb-title">
-            首页
+            {/* 首页 */}
+            {this.props.menuName}
           </Col>
           <Col span={20} className="weather">
             <span className="date">{this.state.sysTime}</span>
@@ -40,3 +41,10 @@ export default class Header extends React.Component {
     )
   }
 }
+// header 是获取数据
+const mapStateToProps = state => {
+  return {
+    menuName: state.menuName
+  }
+}
+export default connect(mapStateToProps)(Header)
