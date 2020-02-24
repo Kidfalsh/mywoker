@@ -1,0 +1,190 @@
+.myAddApplication{
+	width: 100%;
+	height: 100vh;
+	.myAppcontent{
+		width: 100%;
+		margin: 0 auto;
+		height: calc(100% - 110px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		.right{
+			flex: 1;
+			height: 100%;
+			text-align: left;
+			padding-left: 20px;
+			.rightContent{
+				width: 100%;
+				height: calc(100% - 50px);
+				padding-bottom: 50px;
+				.headerTitle{
+					height: 30px; 
+					line-height: 30px;
+				}
+				.baseBody{
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: space-between;
+					.bodyItem{
+						width: 30%;
+						height: 30px;
+						display: flex;
+						align-items: center;
+						margin-top: 10px;
+						p{
+							margin:0;
+							padding:0;
+							display: inline-block;
+							width: 30%;
+							line-height: 30px;
+							height:30px;
+							text-align: right;
+						}
+						input{
+							width: 60%;
+							height: 30px;
+							line-height: 50px;
+							border-radius: 5px;
+						}
+						.select{
+							width: 60%;
+							height: 30px;
+							line-height: 50px;
+							border-radius: 5px;
+						}
+						.selectmulti{
+							flex:1;
+							min-height: 30px;
+							line-height: 30px;
+							border-radius: 5px;
+						}
+					}	
+					// 应用介绍，特性
+					.bodyItemText{
+						width: 100%;
+						height: 120px;	
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: left;
+						margin-top: 20px;
+						padding: 5px;
+						p{
+							margin:0;
+							padding:0;
+							width: 9%;
+							display: inline-block;
+							line-height: 50px;
+							height:50px;
+							text-align: right;
+						}
+						textarea{
+							width: 88.5%;
+							height: 100%;
+							text-align: left;
+						}
+						
+					}
+					// 图片介绍
+					.bodyPicIntro{
+						width: 100%;
+						height: auto;	
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: left;
+						margin-top: 20px;
+						p{
+							margin:0;
+							padding:0;
+							width: 9%;
+							display: inline-block;
+							line-height: 50px;
+							height:50px;
+							text-align: right;
+						}
+						.picIntro{
+							flex: 1;
+							display: flex;
+							justify-content: left;
+							align-items: center;
+						}
+					}
+					// 应用logo图片 BS
+					.bodyPicLogo{
+						flex:1;
+						height: auto;	
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: left;
+						margin-top: 20px;
+						p{
+							margin:0;
+							padding:0;
+							width: 9%;
+							display: inline-block;
+							line-height: 50px;
+							height:50px;
+							text-align: right;
+						}
+						.picLogo{
+							flex: 1;
+							display: flex;
+							justify-content: left;
+							align-items: center;
+						}
+					}
+					// cs的logo布局
+					.CSpicLogo{
+						flex:1;
+						height: auto;	
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: left;
+						margin-top: 20px;
+						p{
+							margin:0;
+							padding:0;
+							width: 50%;
+							display: inline-block;
+							line-height: 50px;
+							height:50px;
+							text-align: right;
+						}
+						.picLogo{
+							flex: 1;
+							display: flex;
+							justify-content: left;
+							align-items: center;
+						}
+					}
+				}
+				.button{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					height: 50px;
+					width: 300px;
+					margin: 20px auto;
+				}
+			}
+		}
+	}
+}
+.titleText{
+	color: red;
+}
+// 为了满足 上传介绍图片布局 追加下面CSS
+.ant-upload-list-picture-card .ant-upload-list-item-info::before{
+	left:0;
+}
+.ant-upload-picture-card-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}

@@ -13,6 +13,8 @@ import Bar from './pages/echarts/bar'
 import Line from './pages/echarts/line'
 import Rich from './pages/rich/index'
 import User from './pages/user/index'
+import ZipUpload from './pages/zipUpload/index'
+import ZipUploadNew from './pages/zipUploadNew/index'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 export default class IRouter extends React.Component {
 
@@ -36,6 +38,8 @@ export default class IRouter extends React.Component {
                   <Route path='/charts/line' component={Line} />
                   <Route path='/rich' component={Rich} />
                   <Route path='/permission' component={User} />
+                  <Route path='/ZipUpload' component={ZipUpload} />
+                  <Route path='/NewZipUpload' component={ZipUploadNew} />
                   <Route component={NoMatch} />
                   <Redirect to="/home"></Redirect>
                 </Switch>
