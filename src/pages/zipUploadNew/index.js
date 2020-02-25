@@ -1,12 +1,11 @@
 
 import React from 'react';
 import './index.less'
-import * as api from './api'
-import moment from 'moment';
-import { Icon, Input, Radio, Form, Card, Select, Switch, DatePicker, TimePicker, InputNumber, Upload, Checkbox, Button } from 'antd'
+// import * as api from './api'
+// import moment from 'moment';
+import {  Input, Form,  Select, Button } from 'antd'
 
 const FormItem = Form.Item;
-const RadioGroup = Radio.Group;
 const Option = Select.Option;
 const TextArea = Input.TextArea;
 

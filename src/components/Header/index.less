@@ -13,8 +13,17 @@
     line-height: 40px;
     padding: 0 20px;
     border-top: 1px solid #f9c700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .breadcrumb-title{
-      text-align: center;
+      text-align: left;
+      .backHome{
+        cursor: pointer;
+        &:hover{
+          color:#1890ff;
+        }
+      }
     }
     .date{
       margin-right: 10px;

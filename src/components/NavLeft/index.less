@@ -1,15 +1,141 @@
-.logo{
-  line-height: 90px;
-  padding-left: 20px;
-  background-color: #002140;
-  img {
-    height: 35px;
-  }
-  h1 {
-    color: #fff;
-    font-size: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 0 0 10px;
-  }
+.navLeft{
+	width: 100%;
+  height: 100vh;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-family: Arial, 'Microsoft YaHei' !important;
+	//font-family: 'SimHei';
+	font-size: 18px;
+	font-weight: 600;
+	background: #f8f8f8;
+	// 左边菜单栏部分
+	.homeLeft{
+		width: 100%;
+		height: 100%;
+		// 我的应用/工具
+		.first{
+			width: 90%;
+			margin: 0 auto;
+			height: 100px;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			span{
+				display: block;
+				width: 100%;
+				margin: 10px auto;
+				font-weight: 600;	
+				color: #2a82db;
+				&:hover{
+					color: #1890ff;
+					cursor: pointer;
+				}
+				a{
+					color:#2a82db;
+				}	
+			}
+		}
+		// 我的分类应用
+		.second{
+			.secondContent{
+				height: auto;
+				width: 90%;
+				margin: 5px auto 0;
+				display: flex;
+				justify-content: left;
+				flex-wrap: wrap;
+				span{
+					display: inline-block;
+					width: 50%;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					font-size: 14px;
+					font-weight: 500;
+					&:hover{
+						color: #1890ff !important;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		// 排行
+		.top{
+			max-height: 500px;
+			overflow: hidden;
+			.topContentContainer{
+				height: auto;
+				margin-top: 5px;
+				text-align: left;
+				padding-left: 20px;
+				color: #333;
+				.topContent{
+					margin-top:5px;
+					>div{
+						font-size: 14px;
+					}
+					.topBody{
+						display: flex;
+						align-items: center;
+						justify-content: left;
+						height: 70px;
+						margin-top: 5px;
+						padding: 0 15px;
+						img{
+							display: block;
+							width: 70px;
+							height: 70px;
+							border: 1px dotted #ddd;
+							margin-right: 10px;
+						}
+						.rightBody{
+							flex:1;
+							height: 100%;
+							span{
+								margin:0;
+								padding:0;
+								display: block;
+								font-size: 12px;
+								font-weight: 500;
+							}
+						}
+						
+					}
+					&:hover{
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	// 公共部分单独剔出来
+	.titleMarket:hover{
+		cursor: pointer;
+	}
+	.title,.titleMarket{
+		width: 90%;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin: 0 auto;
+		border-bottom : 2px solid #2a82db;
+		color:#2a82db;
+		margin-top: 5px;
+		font-weight: 600;
+	}
+	.titleTop{
+		width: 90%;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin: 0 auto;
+		border-bottom : 2px solid #2a82db;
+		color:#2a82db;
+		margin-top: 18px;
+		font-weight: 600;
+	}
+	
 }

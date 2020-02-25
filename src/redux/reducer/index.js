@@ -5,7 +5,8 @@
  */
 import { type } from "../action";
 const initallState = {
-  menuName: '首页'
+  menuName: '首页', /**菜单显示栏 */
+  HeadBreadcrumb: '', /**头部面包屑导航栏 */
 }
 
 export default (state = initallState,action) => {
@@ -15,9 +16,12 @@ export default (state = initallState,action) => {
         ...state,
         menuName: action.menuName
       }
-      // break;
+    case type.HEAD_BREADCRUMB:
+        return {
+          ...state,
+          HeadBreadcrumb:action.HeadBreadcrumb
+        }  
     default:
       return state
-      // break;
   }
 }

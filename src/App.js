@@ -16,7 +16,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{width:'100vw',height:'100vh'}}>
         {this.props.children}
       </div>
     );
