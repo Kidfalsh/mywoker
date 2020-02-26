@@ -306,6 +306,11 @@ module.exports = function(webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        'components': path.resolve(__dirname, '../src/components'),
+        'pages': path.resolve(__dirname, '../src/pages'),
+        'apis': path.resolve(__dirname, '../src/axios'),
+        'utils': path.resolve(__dirname, '../src/utils'),
+        'red': path.resolve(__dirname, '../src/redux'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -686,7 +691,6 @@ module.exports = function(webpackEnv) {
             '**',
             '!**/__tests__/**',
             '!**/?(*.)(spec|test).*',
-            '!**/src/setupProxy.*',
             '!**/src/setupTests.*',
           ],
           silent: true,

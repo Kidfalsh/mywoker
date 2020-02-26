@@ -1,4 +1,4 @@
-'use strict';
+
 
 const errorOverlayMiddleware = require('react-dev-utils/errorOverlayMiddleware');
 const evalSourceMapMiddleware = require('react-dev-utils/evalSourceMapMiddleware');
@@ -87,7 +87,25 @@ module.exports = function(proxy, allowedHost) {
       disableDotRule: true,
     },
     public: allowedHost,
-    proxy,
+    // proxy,
+    proxy:{
+      "/client-manager": {
+        "target": "http://syh708877595.uicp.io",
+        "changeOrigin": true,
+        "secure": false,
+        "pathRewrite": {
+          "^/client-manager": "/client-manager"
+         },
+      },
+      "/application-agent": {
+        "target": "http://29f67q1310.zicp.vip",
+        "changeOrigin": true,
+        "secure": false,
+        "pathRewrite": {
+          "^/application-agent": "/application-agent"
+         },
+      }
+    },
     before(app, server) {
       if (fs.existsSync(paths.proxySetup)) {
         // This registers user provided middleware for proxy reasons

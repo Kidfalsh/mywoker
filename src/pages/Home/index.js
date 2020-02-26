@@ -1,19 +1,21 @@
 import React from 'react'
 import './index.less'
+
+import NavLeft from './../../components/NavLeft'
 export default class Home extends React.Component {
-  state={
-    weather:''
-  }
-  getWeather=() => {
-    
-  }
+  state = {}
   componentDidMount() {
-    this.getWeather()
+    document.title = ' 应用仓库'
   }
   render() {
     return (
       <div className="home-wrap">
-        欢迎学习使用flash
+        <div className='content-left'>
+          <NavLeft />
+        </div>
+        <div className='content-right'>
+          JHUANSG
+        </div>
       </div>
     )
   }
