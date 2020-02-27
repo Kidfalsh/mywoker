@@ -97,12 +97,12 @@ module.exports = function(proxy, allowedHost) {
           "^/client-manager": "/client-manager"
          },
       },
-      "/application-agent": {
-        "target": "http://29f67q1310.zicp.vip",
+      "/store": {
+        "target": "http://syh708877595.uicp.io",
         "changeOrigin": true,
         "secure": false,
         "pathRewrite": {
-          "^/application-agent": "/application-agent"
+          "^/store": "/store"
          },
       }
     },

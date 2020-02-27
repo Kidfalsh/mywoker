@@ -1,7 +1,7 @@
 /** import { stringify } from 'qs'; */
 import * as http from './../../axios/index';
 
-/** 获取天气 */
-export async function getWeather(params) {
-  return http.get('/weather/city.json?cityName=成都',params)
+/** 获取应用列表信息 */
+export async function getAppList(params) {
+  return http.get('/store/application/app/list/info/v1.0',params)
 }

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { notification } from 'antd'
 let base = "";  /** 普通封装api接口适用于大厅里面 */
 const $http = axios.create({
-    /** 设置超时时间5S */
+    /** 设置超时时间10S */
     timeout: 10000
 })
 /** 请求前拦截 */
@@ -51,7 +51,7 @@ const openNotificationWithIcon = (type, inputType, content) => {
  * @param {String} url 请求路径
  * @param {Object} params 请求参数
  */
-const postNormal = (url, params) => {
+const post = (url, params) => {
     return $http({
         method: "post",
         url: `${base}${url}`,
@@ -142,5 +142,5 @@ const multiple = function (requsetArray, callback) {
     $http.all(requsetArray).then(axios.spread(callback));
 };
 export {
-    get, postNormal, postFile, multiple, uploadFile
+    get, post, postFile, multiple, uploadFile
 }

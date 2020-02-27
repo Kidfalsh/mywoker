@@ -48,8 +48,8 @@ export default class IRouter extends React.Component {
                   <Route path='/singleType' component={SingleType} />
                   <Route path='/NewZipUpload' component={ZipUploadNew} />
                   <Route path='/addApplication' component={AddApplication} />
-                  <Route component={NoMatch} />
                   <Redirect to="/home"></Redirect>
+                  <Route component={NoMatch} />
                   {/* <Route path='/ui/buttons' component={Buttons} />
                   <Route path='/ui/modals' component={Modals} />
                   <Route path='/ui/gallery' component={Gallery} />
@@ -63,7 +63,6 @@ export default class IRouter extends React.Component {
                 </Switch>
               </Admin>
             } />
-            
           </Switch>
         </App>
       </HashRouter>

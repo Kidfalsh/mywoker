@@ -17,5 +17,29 @@
 			width:100%;
 			margin-right: 0;
 		}
+		.depFormItem{
+			width: calc(1/3*100%);
+			margin-right: 0;
+		}
+		.submitFormItem{
+			width: 100%;
+			.submitButton{
+				width: 40%;
+				margin: 0 5%;
+			}
+		}
+	}
+	.has-error{
+		display: flex;
+		align-items: center;
+		.ant-form-item-children{
+			width: 50%;
+		}
+		.ant-form-explain{
+			width: 50%;
+		}
+	}
+	.ant-form-item-with-help{
+		margin-bottom: 0px;
 	}
 }
