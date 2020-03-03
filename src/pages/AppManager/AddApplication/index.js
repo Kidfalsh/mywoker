@@ -17,7 +17,7 @@ class addApplication extends React.Component {
     isSetupYL: false,
     SetupYLValue: 0,
     setupYLInfo: {},
-    fileListYL: [],
+    fileListYL: [], // 依赖包信息
   }
   /** 统一封装弹框 */
   openMessage = (type, words) => {
